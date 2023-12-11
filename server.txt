@@ -1,0 +1,140 @@
+            node js
+    ------------------------
+--java script run time enviroment
+--to run javascript code
+--includes javascript package and node packages
+--not a framework, not a programming lanuguage
+--it is a run time enviroment with javascript libraries
+--node js is faster .beacause complier and interpreter is same for browser and node 
+--no time decley
+--asynchoronus functions solve
+--Free and open Sources
+
+      Features of node js
+-----------------------------------
+  --Extremely fast
+  --asynchronous
+  --single threaded
+  --highly scalable
+  --open Source
+  
+         Important parts of node js
+  -----------------------------------------
+  1-Modules
+  2-Callback
+  3-DNS
+  4-Global
+  5-Domain
+  6-Buffer
+  7-console
+  8-streaming
+  9-net
+  10-Error Handlling
+  11-Debugger
+  12-Add-ons
+  13-Crpto
+
+         4-Global
+  ------------------------
+  it can access anywhere from node js without exporting /importing
+     eg-- console.log()
+      setTimeOut()
+
+            1-Module system
+      ---------------------------
+        -- Each file in node js can consider as seperate Module
+        -- to reuse this module into another module
+        -- use export and import statement
+        -- to import Module:use function require('import file name')
+        -- to export module:use keyword export
+        -- export default:single item export
+        -- module.export--to export multiple items
+
+            Buildin module are available in code
+        ----------------------------------------------------
+         fs:file system:Handlling file related events
+
+         http:server creation -- which can be used to make http request
+
+         crypto:providing tools like hashing encryption ect.....(data protection)
+
+         process:   
+
+              node js package
+          -----------------------------
+           --used to help solve comman problem.it is publically available .it is actually a collection of node modules with package.json
+           -- to install package we are using npm(node package manager)
+           
+           node configuration files
+           ----------------------------------------
+           --package.json---npm configuration files for a project
+           --package.lock.json--to hold version of packages install in a project
+           --node_modules---to hold copies of installed packages
+
+           client-server-architecture application
+           -------------------------------------------
+           sending request$mresponse via http protocol
+
+           http request---- Get Post put delete
+
+           Rest Api----- respresentational state transfer architecture--- only pass http request with json data
+
+            CURD operation
+            ---------------
+            create(Post),read(get),update(put),delete
+
+            CORs--- cross origin rescourse sharing protocol
+
+            Epress.js
+            -----------------
+            --it is a frame work of node.js clent server application
+
+            --creating server for our application
+            ---------------------------------------------------
+           1 --create a folder for server
+           2 --inside server folder create package.json file
+                [npm init -y]
+               3 ---change the script
+                ---include "start":"node index.js" in scripts of package.json
+                ----install package for creating server using express framework
+                             --install express:npm i express
+                             --install cors:npm i cors
+                             --install dotenv:npm i dotenv
+
+              4-- to handle enviromental variables we want to create .env file 
+              5-- create .env file in backend
+              6-- create .gitignore
+              7-- create index.js file in server folder
+              9--define express server in index.js
+              
+                       we can create a server using express frame work in node
+              --------------------------------------------------------------------------
+
+
+             step1:- import .env package in order to load .env file
+             step2:- import express server
+             step3:- import cors
+             step4:-  create express server
+             step5:-  use cors in server
+             step6:-  parse json to object.parse json data using server app
+             step7-customize port for server
+             step8- to run server app use listen
+             step9- resolve request to localhost 4000
+             --for autorecompliaction nodemon
+
+             to install Globally npm i -g nodemon
+             
+
+
+
+
+             database
+
+     -------------------------
+--to store bulk data
+--to store permanent data
+--manipulate,predefined, can be done
+
+              server
+    ---------------------------
+     to handle more request at a time 

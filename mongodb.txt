@@ -1,0 +1,103 @@
+1-database is used to store data permantly
+
+2-differnce between sql and mongodb 
+
+             sql                                                             mongodb
+  ------------------------------------                        --------------------------------------  
+  1-relational dbms                                               1-Document oriented/no sql database
+
+  2-store in table with row &column                               2- collection of json documents
+
+  3-user fixed schema                                             3-dynamic schema
+
+  4-optimize for complex join and transaction                     4-optimize scalability and performance
+
+  5-sql support rich set of data type                             5-limited set of database
+
+  6-declarative query lanuguage                                   6-expressive query lanuguage based on json
+
+  7-ACID(atomicity,consistyency,isolation,durability)            7-mongodb follows no sql based on cap(consistency,availability
+                                                                   ,partition tolerance)
+
+  8-traditional business application(sql)                       8-mongodb used in big data(large amount of data real time
+                                                                  web application)
+
+
+
+3--how we can use mongodb in crud operation
+----------------------------------------------------
+ CURD operation
+
+ 1- craete()
+      insertone()
+      insertmany()
+
+ 2-read()
+    find()
+    findone()   
+
+ 3-update()
+     updateone()
+     updatemany()
+
+ 4-delete()
+     deleteone()
+     deletemany()
+
+ 5- in documents one key is array
+       $push
+       $pull 
+
+ 4-complex queries
+ ---------------------------
+      $eq equalto
+      $neq not equalto   
+
+      $gt  
+      $gte 
+
+    5-  in one document compare 2 keys
+      ------------------------------------
+            $express
+
+            upadate--$set
+            remove-$unset
+
+     6- to check a key is present in a document
+      ----------------------------------------
+          $exist
+
+    7- Logical operators
+     -------------------------
+     $or $and
+
+     sort()
+     count()
+     limit()
+
+    8- two combine two collection
+    ---------------------------------
+    aggregation:to join different collection in same database   
+
+
+    DATA MODEL
+    ---------------------------
+    node has no direct communication with mongodb.to connect Node and Mongodb .An intermediate is there.tha is mongoose
+
+
+    Schema:structure of the data to be stored
+
+         MODEL CREATE INSIDE SCHEMA
+         -----------------------------
+            data
+            datatype
+            validation
+
+
+
+
+   
+
+
+
+
